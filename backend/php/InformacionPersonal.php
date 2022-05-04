@@ -1,4 +1,4 @@
-<<?php
+<?php
     $peticion = file_get_contents("../json/sistemaInformacionPersonal.json");
     $_DATA = json_decode($peticion, true);
    
