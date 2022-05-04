@@ -7,10 +7,13 @@
     <title>Formulario para captar informacion</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <!-- multistep form -->
-<form id="msform" method="POST" action="https://AdrianFillippo.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php" >
+    <!-- https://adrianfillippo.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php -->
+<form id="msform" method="POST" action="backend/php/api.php" >
     <!-- progressbar -->
     <ul id="progressbar">
       <li class="active">Informacion Personal</li>
@@ -21,22 +24,22 @@
     <fieldset>
       <h2 class="fs-title">Informacion Personal</h2>
       <h3 class="fs-subtitle">Formulario 1</h3>
-        <select id="tipoDocumento" required>
-          <option>Selecione el tipo de documento</option>
-          
+        <select id="tipo-documento" required>
+          <option value="">Selecione el tipo de documento</option>
+
         </select>
-      <input id="Ndocumento" type="number"  placeholder="N° Documento" required/>
-      <input id="fechaExpedicion" type="text" placeholder="Fecha de expedicion del documento" onfocus="(this.type='date')" onblur="(this.type='text')" required/>
-      <input id="primerNombre" type="text" placeholder="Primer nombre" required/>
-      <input id="segundoNombre" type="text"  placeholder="Segundo nombre" />
-      <input id="primerApellido" type="text"  placeholder="Primer Apellido" required/>
-      <input id="segundoApellido" type="text" placeholder="Segundo Apellido" />
+      <input id="n-documento" type="number"  placeholder="N° Documento" required/>
+      <input id="fecha-expedicion" type="text" placeholder="Fecha de expedicion del documento" onfocus="(this.type='date')" onblur="(this.type='text')" required />
+      <input id="primer-nombre" type="text" placeholder="Primer nombre" required />
+      <input id="segundo-nombre" type="text"  placeholder="Segundo nombre" />
+      <input id="primer-apellido" type="text"  placeholder="Primer Apellido" required />
+      <input id="segundo-apellido" type="text" placeholder="Segundo Apellido" />
       <div>
           <div id="generos" class="cajaRadio">
-
+            
           </div>
           <div id="estados" class="cajaRadio">
-
+            
           </div>
       </div>
       <input type="submit" name="next" class="next action-button" value="Siguiente" data-boton="informacionPersonal" />
@@ -61,5 +64,42 @@
       <input type="submit" name="submit" class="submit action-button" value="Submit" />
     </fieldset>
   </form>
+  <div class="contenedor">
+    <button class="botonF1">
+      <span>+</span>
+    </button>
+    <button id="myBtn" class="btn botonF2" data-json="informacionPersonal.json">
+      <span><ion-icon name="analytics-outline"></ion-icon></span>
+    </button>
+    <!-- <button class="btn botonF3">
+      <span>+</span>
+    </button>
+    <button class="btn botonF4">
+      <span>+</span>
+    </button>
+    <button class="btn botonF5">
+      <span>+</span>
+    </button> -->
+     </div>
+
+    <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><ion-icon name="close"></ion-icon></span>
+    <div class="container">
+      <table>
+        <thead>
+         
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>

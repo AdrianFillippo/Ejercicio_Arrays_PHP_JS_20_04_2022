@@ -1,0 +1,15 @@
+[
+    {
+        "32323232": {
+            "tipo-documento": "C.C",
+            "n-documento": "32323232",
+            "fecha-expedicion": "2005-11-12",
+            "primer-nombre": "Adrian",
+            "segundo-nombre": "Jesus",
+            "primer-apellido": "Ochoa",
+            "segundo-apellido": "Fillippo",
+            "genero": "Masculino",
+            "estado-civil": "Solter@"
+        }
+    }
+]
